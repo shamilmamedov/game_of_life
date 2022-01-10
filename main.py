@@ -186,14 +186,9 @@ def visulize_population(population, shape):
     plt.show()
 
 if __name__ == "__main__":
-    # initial_population = {(2,2), (1,3), (2,4)}
-    # initial_population = {(2,2), (3,2), (4,2)}
+    grid_size = (100,100)
     # initial_population = glider((2,2))
-    grid_size = (101,101)
     initial_population = gun((15,25), grid_size)
-    print(initial_population)
 
-    # visulize_population(initial_population, grid_size)
-
-    gl = GameOfLife(initial_population, (100,100))
+    gl = GameOfLife(initial_population, grid_size)
     gl.play()   

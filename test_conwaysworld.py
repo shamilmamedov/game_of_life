@@ -61,4 +61,3 @@ def test_blinker():
     cw.progogate_life()
     assert cw.population == initial_population
 
-
